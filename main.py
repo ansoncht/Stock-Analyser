@@ -1,3 +1,5 @@
+import sys
+
 import search as sh
 import tkinter as tk
 
@@ -28,5 +30,8 @@ while repeat == 'Y':
     # Important Message
     print("\n\t\t\t\t\tHere are the details for " + symbol)
     print("--------------------------------------------------------------------")
-    target = sh.Symbol(symbol)
+    try:
+        target = sh.Symbol(symbol)
+    except TypeError:
+        sys.exit("Symbol not found")
     repeat = input("Y / N ").upper()
