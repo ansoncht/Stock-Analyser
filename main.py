@@ -20,7 +20,7 @@ import tkinter as tk
 # tk.Entry(bd="10px", font="10px").pack()
 # window.mainloop()
 
-# initialize variable
+# initialize variables
 repeat = 'Y'
 while repeat == 'Y':
     # Welcome Message
